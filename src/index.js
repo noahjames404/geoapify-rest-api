@@ -20,7 +20,7 @@ app.get("/", (req, res) => {
 app.get("/api/v1/forward-geocoding", (req, res) => {
   httpClient({
     method: "get",
-    url: `/geocoding/v5/mapbox.places/${req.query.location}.json?access_token=${process.env.MAPBOX_TOKEN}`
+    url: `/v1/geocode/search?text=${req.query.location}&apiKey=${process.env.GEOAPIFY_KEY}`
   }).then(response => {
     res.json({
       payload: response.data
@@ -31,11 +31,16 @@ app.get("/api/v1/forward-geocoding", (req, res) => {
 app.get("/api/v1/reverse-geocoding", (req, res) => {
   httpClient({
     method: "get",
-    url: `/geocoding/v5/mapbox.places/${req.query.location}.json?access_token=${process.env.MAPBOX_TOKEN}`
+    url: `/v1/geocode/reverse?lat=${req.query.y}&lon=${req.query.x}&apiKey=${process.env.GEOAPIFY_KEY}`
   }).then(response => {
     res.json({
-      payload: response.data
+      payload:response.data
     });
+
+  }).catch(function(error){
+    res.json({
+      payload:error
+    })
   });
 });
 

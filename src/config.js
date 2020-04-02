@@ -1,5 +1,5 @@
 const config = {
-  BASE_URL: "https://api.mapbox.com"
+  BASE_URL: "https://api.geoapify.com"
 };
 
 module.exports = config;
