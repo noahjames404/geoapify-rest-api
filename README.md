@@ -4,6 +4,7 @@ Basic Geoapify REST API for Forward and Reverse Geocoding
 
 **References:**
 - [Geocoding Api Demo](https://apidocs.geoapify.com/playground/geocoding)
+- [Geocoding Documentation](https://apidocs.geoapify.com/docs/geocoding/getting-started/geocoding)
 
 **Pricing**
 - https://www.geoapify.com/api-pricing/
