@@ -1,14 +1,15 @@
-# Mapbox REST API
+# Geoapify REST API
 
-Basic Mapbox REST API for Forward and Reverse Geocoding
+Basic Geoapify REST API for Forward and Reverse Geocoding
 
 **References:**
+- [Geocoding Api Demo](https://apidocs.geoapify.com/playground/geocoding)
 
-- [Forward Geocoding](https://docs.mapbox.com/api/search/#forward-geocoding)
-- [Reverse Geocoding](https://docs.mapbox.com/api/search/#reverse-geocoding)
+**Pricing**
+- https://www.geoapify.com/api-pricing/
 
 **Available endpoints:**
 |Endpoint|Method |
 |--|--|
-| [/api/v1/forward-geocoding?location=address](http://mapbox-rest-api.herokuapp.com/api/v1/forward-geocoding?location=zambales) | GET |
-| [/api/v1/reverse-geocoding?location=lng,lat](http://mapbox-rest-api.herokuapp.com/api/v1/reverse-geocoding?location=23,28) | GET |
+| [/api/v1/forward-geocoding?location=address](https://geoapify-api.herokuapp.com/api/v1/forward-geocoding?location=zambales) | GET |
+| [/api/v1/reverse-geocoding?x=121.1083779&y=11](https://geoapify-api.herokuapp.com/api/v1/reverse-geocoding?x=121.1083779&y=11) | GET |
